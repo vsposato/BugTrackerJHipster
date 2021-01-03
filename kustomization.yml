@@ -1,0 +1,18 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+resources:
+  # Individual apps
+  - bugtrackerjhipster-k8s/bugtrackerjhipster-deployment.yml
+  - bugtrackerjhipster-k8s/bugtrackerjhipster-service.yml
+  - bugtrackerjhipster-k8s/bugtrackerjhipster-mysql.yml
+  # monitoring elk
+  - console-k8s/jhipster-elasticsearch.yml
+  - console-k8s/jhipster-logstash.yml
+  - console-k8s/jhipster-console.yml
+  - console-k8s/jhipster-dashboard-console.yml
+  # service discovery eureka/consul
+  - registry-k8s/jhipster-registry.yml
+  - registry-k8s/application-configmap.yml
+
+patchesJson6902:

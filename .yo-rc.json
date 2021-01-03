@@ -38,6 +38,17 @@
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": ["en"],
-    "blueprints": []
+    "blueprints": [],
+    "appsFolders": ["BugTrackerJHipster"],
+    "directoryPath": "../",
+    "dockerRepositoryName": "vsposato",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "default",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": true,
+    "kubernetesStorageClassName": "",
+    "ingressDomain": "",
+    "monitoring": "elk",
+    "istio": false
   }
 }
