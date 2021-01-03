@@ -1,0 +1,23 @@
+WARNING! Kubernetes configuration generated, but no Jib cache found
+If you forgot to generate the Docker image for this application, please run:
+To generate the missing Docker image(s), please run:
+  ./mvnw -ntp -Pprod verify jib:dockerBuild in /Users/vsposato/SoftwareDevelopment/LearnProjects/BugTrackerJHipster
+
+
+WARNING! You will need to push your image to a registry. If you have not done so, use the following commands to tag and push the images:
+  docker image tag bugtrackerjhipster vsposato/bugtrackerjhipster
+  docker push vsposato/bugtrackerjhipster
+
+INFO! Alternatively, you can use Jib to build and push image directly to a remote registry:
+  ./mvnw -ntp -Pprod verify jib:build -Djib.to.image=vsposato/bugtrackerjhipster in /Users/vsposato/SoftwareDevelopment/LearnProjects/BugTrackerJHipster
+
+You can deploy all your apps by running the following kubectl command:
+  bash kubectl-apply.sh -f
+
+[OR]
+
+If you want to use kustomize configuration, then run the following command:
+  bash kubectl-apply.sh -k
+
+Use these commands to find your application's IP addresses:
+  kubectl get svc bugtrackerjhipster
