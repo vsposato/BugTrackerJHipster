@@ -281,11 +281,11 @@ spec:
                   key: path.logs
           resources:
             requests:
-              memory: '512Mi'
-              cpu: '200m'
+              memory: '1Gi'
+              cpu: '2'
             limits:
-              memory: '1024Mi'
-              cpu: '400m'
+              memory: '2Gi'
+              cpu: '2'
           ports:
             - containerPort: 9300
               name: transport
